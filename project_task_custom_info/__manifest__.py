@@ -7,7 +7,7 @@
     """,
     "author": "Solvos",
     "license": "LGPL-3",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.0.1",
     "category": "Project",
     "website": "https://github.com/solvosci/slv-project",
     "depends": ["project", "base_custom_info"],

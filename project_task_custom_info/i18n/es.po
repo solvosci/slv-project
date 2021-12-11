@@ -21,7 +21,7 @@ msgid "Click to define a new custom info template for Project Tasks."
 msgstr "Haga clic para definir una plantilla de información personlizada para tareas de proyectos."
 
 #. module: project_task_custom_info
-#: model_terms:ir.ui.view,arch_db:project_task_custom_info.view_partner_form
+#: model_terms:ir.ui.view,arch_db:project_task_custom_info.view_task_form2
 msgid "Custom Information"
 msgstr "Inf. personalizada"
 
