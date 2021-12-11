@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem
+        id="menu_base_custom_info_template"
+        action="project_task_custom_info_template_action"
+        parent="project.menu_project_config"
+        groups="base_custom_info.group_basic"
+        sequence="20"
+    />
+</odoo>

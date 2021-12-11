@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="0">
+        <record id="group_project_task" model="res.groups">
+            <field name="name">Display in Project Task form</field>
+            <field name="category_id" ref="base_custom_info.category" />
+            <field
+                name="comment"
+            >Will be able to edit custom information from project task's form.</field>
+        </record>
+    </data>
+</odoo>
