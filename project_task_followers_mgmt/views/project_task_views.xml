@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_task_form2" model="ir.ui.view">
+        <field name="name">
+            project.task.form (in project_task_followers_mgmt)
+        </field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2" />
+        <field eval="100" name="priority" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//field[@name='user_id']"
+                position="attributes"
+            >
+                <attribute name="attrs">{
+                    'invisible': [('project_privacy_visibility', '=', 'followers')],
+                }</attribute>
+            </xpath>
+            <xpath
+                expr="//page[@name='extra_info']/group/group/field[@name='allowed_user_ids']"
+                position="replace"
+            ></xpath>
+            <xpath expr="//field[@name='user_id']" position="after">
+                <!-- TODO domain is too restricting, it might be placed in a custom addon -->
+                <field
+                    name="allowed_user_ids"
+                    widget="many2many_tags_avatar"
+                    attrs="{'invisible': [('project_privacy_visibility', '!=', 'followers')]}"
+                    domain="[('employee_ids','!=',False)]"
+                    string="Extra assignment"
+                />
+            </xpath>
+        </field>
+    </record>
+    <record id="view_task_tree2" model="ir.ui.view">
+        <field name="name">
+            project.task.tree (in project_task_followers_mgmt)
+        </field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_tree2" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field
+                    name="allowed_user_ids"
+                    optional="show"
+                    widget="many2many_tags_avatar"
+                    string="Extra assignment"
+                />
+            </xpath>
+        </field>
+    </record>
+    <record id="view_task_search_form" model="ir.ui.view">
+        <field name="name">
+            project.task.search.form (in project_task_followers_mgmt)
+        </field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_search_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='my_tasks']" position="attributes">
+                <attribute name="domain">['|',('user_id', '=', uid),('allowed_user_ids', 'in', [uid])]</attribute>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_task_search_form_manager" model="ir.ui.view">
+        <field name="name">
+            project.task.search.form manager (in project_task_followers_mgmt)
+        </field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_search_form" />
+        <field
+            name="groups_id"
+            eval="[(4, ref('project.group_project_manager'))]"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='my_tasks']" position="before">
+                <filter
+                    name="filter_without_allowed"
+                    string="Without allowed users"
+                    domain="[('user_id','=',False),('allowed_user_ids','=',False)]"
+                />
+                <separator />
+            </xpath>
+        </field>
+    </record>
+</odoo>
