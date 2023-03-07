@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_document_page_project_task" model="ir.actions.act_window">
+        <field name="name">Tasks</field>
+        <field name="res_model">project.task</field>
+        <field name="view_mode">tree,form</field>
+        <field name="binding_model_id" ref="project.model_project_task"/>
+        <field name="domain">[('document_page_ids', '=', active_id)]</field>
+        <field name="context">{'default_task_ids': active_ids}</field>
+    </record>
+
+    <record id="action_project_task_document_page" model="ir.actions.act_window">
+        <field name="name">Documents</field>
+        <field name="res_model">document.page</field>
+        <field name="binding_model_id" ref="project.model_project_task"/>
+        <field name="domain">[('task_ids', '=', active_id)]</field>
+        <field name="context">{'default_task_ids': active_ids}</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_ids" eval="[(5,0,0),
+              (0,0,{'view_mode':'tree', 'view_id': ref('document_page.view_wiki_tree')}),
+              (0,0,{'view_mode':'form', 'view_id': ref('document_page.view_wiki_form')})]"
+        />
+        <field name="search_view_id" ref="document_page.view_wiki_filter" />
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to create a new web page.
+            </p>
+        </field>
+    </record>
+</odoo>
