@@ -1,0 +1,3 @@
+- Better place for Task Calendar in Project menu.
+- In Task ``tree`` view, show tags with tasks intervals.
+- Allowed users by interval?

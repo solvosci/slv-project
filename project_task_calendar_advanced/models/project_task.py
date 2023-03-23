@@ -1,8 +1,7 @@
 # © 2023 Solvos Consultoría Informática (<http://www.solvos.es>)
 # License LGPL-3.0 (https://www.gnu.org/licenses/lgpl-3.0.html)
 
-from odoo import _, api, fields, models
-from odoo.exceptions import ValidationError
+from odoo import api, fields, models
 
 
 class ProjectTask(models.Model):
@@ -27,21 +26,15 @@ class ProjectTask(models.Model):
         depending on their partner_type.
         """,
     )
-
-    date_planned_start = fields.Datetime(
-        string="Start at",
-        help="""
-        For Task Calendar, indicates planned start date for this task
-        """,
+    task_interval_ids = fields.One2many(
+        comodel_name="project.task.interval",
+        inverse_name="task_id",
+        string="Intervals",
     )
-    date_planned_duration = fields.Float(
-        string="Duration (h)",
-        compute="_compute_date_planned_duration",
+    task_interval_count = fields.Integer(
+        compute="_compute_task_interval_count",
         store=True,
-        readonly=False,
-        help="""
-        For Task Calendar, indicates planned duration for this task
-        """,
+        string="Interval count",
     )
 
     @api.depends("partner_id")
@@ -65,20 +58,7 @@ class ProjectTask(models.Model):
                 ),
             })
 
-    @api.constrains("date_planned_start")
-    def _check_date_planned_values(self):
-        err_tasks = self.filtered(
-            lambda x: x.date_planned_start and not x.date_planned_duration
-        )
-        if err_tasks:
-            raise ValidationError(
-                _("You should set a duration for the following tasks: %s")
-                %
-                ", ".join(err_tasks.mapped("name"))
-            )
-
-    @api.depends("date_planned_start")
-    def _compute_date_planned_duration(self):
-        self.filtered(lambda x: not x.date_planned_start).write({
-            "date_planned_duration": 0.0,
-        })
+    @api.depends("task_interval_ids")
+    def _compute_task_interval_count(self):
+        for task in self:
+            task.task_interval_count = len(task.task_interval_ids)

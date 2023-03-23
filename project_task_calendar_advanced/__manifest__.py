@@ -8,13 +8,14 @@
     """,
     "author": "Solvos",
     "license": "LGPL-3",
-    "version": "14.0.1.0.0",
+    "version": "14.0.2.0.0",
     "category": "Project",
     "website": "https://github.com/solvosci/slv-project",
     "depends": ["project"],
     "data": [
         "security/ir.model.access.csv",
         "views/project_task_views.xml",
+        "views/project_task_interval_views.xml",
     ],
     'installable': True,
 }
