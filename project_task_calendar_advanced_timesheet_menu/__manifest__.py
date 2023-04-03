@@ -8,7 +8,7 @@
     """,
     "author": "Solvos",
     "license": "AGPL-3",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.1.0",
     "category": "Project",
     "website": "https://github.com/solvosci/slv-project",
     "depends": ["project_task_calendar_advanced", "hr_timesheet_sheet"],
