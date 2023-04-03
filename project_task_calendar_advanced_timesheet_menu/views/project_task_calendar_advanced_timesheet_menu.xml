@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-    <menuitem id="menu_project_report_task_calendar_advanced_timesheet"
+    <menuitem id="menu_project_report_task_calendar_advanced_timesheet_all"
+        name="Tasks"
+        action="project.action_view_all_task"
+        groups="project.group_project_user"
+        parent="hr_timesheet_sheet.menu_hr_to_review"
+        sequence="15"
+    />
+    <menuitem id="menu_project_report_task_calendar_advanced_timesheet_cal"
         name="Advanced Task View"
         action="project_task_calendar_advanced.action_view_task_advanced"
         groups="project.group_project_user"
