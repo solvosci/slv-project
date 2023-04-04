@@ -18,7 +18,7 @@ msgstr ""
 #. module: project_task_calendar_advanced_timesheet_menu
 #: model:ir.ui.menu,name:project_task_calendar_advanced_timesheet_menu.menu_project_report_task_calendar_advanced_timesheet_cal
 msgid "Advanced Task View"
-msgstr ""
+msgstr "Vista avanzada de tareas"
 
 #. module: project_task_calendar_advanced_timesheet_menu
 #: model:ir.ui.menu,name:project_task_calendar_advanced_timesheet_menu.menu_project_report_task_calendar_advanced_timesheet_all
