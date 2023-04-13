@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_task_timesheet_summary_pivot" model="ir.ui.view">
+        <field name="name">project.task.timesheet_summary.pivot</field>
+        <field name="model">project.task.timesheet_summary</field>
+        <field name="arch" type="xml">
+            <pivot
+                string="Tasks Analysis - Allowed users"
+                display_quantity="False"
+                disable_linking="True"
+                sample="1"
+            >
+                <field name="allowed_user_id" type="row"/>
+                <field name="hours_planned" type="measure" string="Planned"/>
+                <field name="hours_effective" type="measure" string="Done"/>
+                <field name="hours_deviation" type="measure" string="Deviation"/>
+            </pivot>
+        </field>
+    </record>
+    <record id="view_task_timesheet_summary_tree" model="ir.ui.view">
+        <field name="name">project.task.timesheet_summary.tree</field>
+        <field name="model">project.task.timesheet_summary</field>
+        <field name="arch" type="xml">
+            <tree decoration-danger="hours_deviation &lt; 0">
+                <field name="allowed_user_id" widget="many2one_avatar_user"/>
+                <field name="project_id"/>
+                <field name="task_id"/>
+                <field name="hours_planned" widget="timesheet_uom"/>
+                <field name="hours_effective" widget="timesheet_uom"/>
+                <field name="hours_deviation" widget="timesheet_uom"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_task_timesheet_summary_search" model="ir.ui.view">
+        <field name="name">project.task.timesheet_summary.search</field>
+        <field name="model">project.task.timesheet_summary</field>
+        <field name="arch" type="xml">
+            <search string="Tasks Analysis - Allowed users">
+                <field name="allowed_user_id"/>
+                <field name="project_id"/>
+                <field name="task_id"/>
+                <separator/>
+                <filter
+                    name="filter_active_tasks"
+                    string="Active Tasks"
+                    domain="[('task_active','=',True)]"
+                />
+                <filter
+                    name="filter_inactive_tasks"
+                    string="Inactive Tasks"
+                    domain="[('task_active','=',False)]"
+                />
+                <separator/>
+                <filter
+                    name="filter_customer_tasks"
+                    string="Customer Tasks"
+                    domain="[('partner_id','!=',False)]"
+                />
+                <filter
+                    name="filter_internal_tasks"
+                    string="Internal Tasks"
+                    domain="[('partner_id','=',False)]"
+                />
+                <group expand="0" string="Group By">
+                    <filter string="User" name="groupby_user" context="{'group_by': 'allowed_user_id'}"/>
+                    <filter string="Customer" name="groupby_partner" context="{'group_by': 'partner_id'}"/>
+                    <filter string="Project" name="groupby_project" context="{'group_by': 'project_id'}"/>
+                    <filter string="Task" name="groupby_task" context="{'group_by': 'task_id'}"/>
+                </group>                
+            </search>
+        </field>
+    </record>
+
+    <record id="action_view_task_timesheet_summary" model="ir.actions.act_window">
+        <field name="name">Task Analysis - Allowed users</field>
+        <field name="res_model">project.task.timesheet_summary</field>
+        <field name="view_mode">pivot,tree</field>
+        <field
+            name="view_ids"
+            eval="[
+                (5, 0, 0),
+                (0, 0, {'view_mode': 'pivot', 'view_id': ref('view_task_timesheet_summary_pivot')}),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('view_task_timesheet_summary_tree')}),
+            ]"
+        />
+        <field name="context">{
+            'search_default_filter_active_tasks': 1,
+            'search_default_groupby_user': 1,
+        }</field>
+    </record>
+    <menuitem id="menu_project_task_followers_mgmt_timesheet_report"
+        name="Task Analysis - Allowed users"
+        action="project_task_followers_mgmt_timesheet.action_view_task_timesheet_summary"
+        parent="project.menu_project_report"
+        sequence="30"
+    />
+</odoo>

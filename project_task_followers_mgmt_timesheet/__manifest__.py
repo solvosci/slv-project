@@ -8,9 +8,14 @@
     """,
     "author": "Solvos",
     "license": "LGPL-3",
-    "version": "14.0.1.0.1",
+    "version": "14.0.2.0.0",
     "category": "Project",
     "website": "https://github.com/solvosci/slv-project",
     "depends": ["project_task_followers_mgmt", "hr_timesheet"],
-    "data": ["security/hr_timesheet_security.xml"],
+    "data": [
+        "security/ir.model.access.csv",
+        "security/hr_timesheet_security.xml",
+        "views/project_task_views.xml",
+        "views/project_task_timesheet_summary_views.xml",
+    ],
 }

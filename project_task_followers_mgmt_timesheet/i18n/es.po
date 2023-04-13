@@ -1,0 +1,990 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* project_task_followers_mgmt_timesheet
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-14 11:20+0000\n"
+"PO-Revision-Date: 2023-04-14 11:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__partner_type
+msgid ""
+"\n"
+"        Indicates task type according to associated partner:\n"
+"        internal - belongs to an internal project (has no partner)\n"
+"        customer - the project was linked to a partner\n"
+"        "
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__partner_type_color_id
+msgid ""
+"\n"
+"        Technical field that help us to set a different color for tasks\n"
+"        depending on their partner_type.\n"
+"        "
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__access_warning
+msgid "Access warning"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__analytic_account_active
+msgid "Active Analytic Account"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_timesheet_summary_search
+msgid "Active Tasks"
+msgstr "Tareas activas"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__allow_subtasks
+msgid "Allow Sub-tasks"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__allow_timesheets
+msgid "Allow timesheets"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model,name:project_task_followers_mgmt_timesheet.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "Línea Analítica"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__user_id
+msgid "Assigned to"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__date_assign
+msgid "Assigning Date"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__attachment_ids
+msgid "Attachment that don't come from message."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__partner_is_company
+msgid "Check if the contact is a company, otherwise it is a person"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__partner_city
+msgid "City"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__is_closed
+msgid "Closing Stage"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__color
+msgid "Color Index"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__commercial_partner_id
+msgid "Commercial Entity"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__company_id
+msgid "Company"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__displayed_image_id
+msgid "Cover Image"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__partner_id
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_timesheet_summary_search
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__access_url
+msgid "Customer Portal URL"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_timesheet_summary_search
+msgid "Customer Tasks"
+msgstr "Tareas de cliente"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__repeat_weekday
+msgid "Day Of The Week"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__date_deadline
+msgid "Deadline"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__description
+msgid "Description"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_form2
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_timesheet_summary_pivot
+msgid "Deviation"
+msgstr "Desviación"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_account_analytic_line__display_name
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_project__display_name
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task__display_name
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__progress
+msgid "Display progress of current task."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_form2
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_timesheet_summary_pivot
+msgid "Done"
+msgstr "Hecho"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__partner_email
+msgid "Email"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__email_from
+msgid "Email From"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__email_cc
+msgid "Email cc"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__encode_uom_in_days
+msgid "Encode Uom In Days"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__repeat_until
+msgid "End Date"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__date_end
+msgid "Ending Date"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__fri
+msgid "Fri"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__sequence
+msgid "Gives the sequence order when displaying a list of tasks."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_timesheet_summary_search
+msgid "Group By"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__hours_deviation
+msgid "Hours Deviation"
+msgstr "Horas desviadas"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__hours_effective
+msgid "Hours Effective"
+msgstr "Horas efectivas"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__hours_planned
+msgid "Hours Planned"
+msgstr "Horas planificadas"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__effective_hours
+msgid "Hours Spent"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_account_analytic_line__id
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_project__id
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task__id
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__id
+msgid "ID"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_needaction
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_has_error
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_timesheet_summary_search
+msgid "Inactive Tasks"
+msgstr "Tareas archivadas"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__planned_hours
+msgid "Initially Planned Hours"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_timesheet_summary_search
+msgid "Internal Tasks"
+msgstr "Tareas internas"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__task_interval_count
+msgid "Interval count"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__task_interval_ids
+msgid "Intervals"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__partner_is_company
+msgid "Is a Company"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__legend_blocked
+msgid "Kanban Blocked Explanation"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__legend_normal
+msgid "Kanban Ongoing Explanation"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__kanban_state
+msgid "Kanban State"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__kanban_state_label
+msgid "Kanban State Label"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__legend_done
+msgid "Kanban Valid Explanation"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_account_analytic_line____last_update
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_project____last_update
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task____last_update
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__date_last_stage_update
+msgid "Last Stage Update"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__email_cc
+msgid "List of cc from incoming emails."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__attachment_ids
+msgid "Main Attachments"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__mon
+msgid "Mon"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__recurrence_message
+msgid "Next Recurrencies"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__legend_blocked
+msgid ""
+"Override the default value displayed for the blocked state for kanban "
+"selection, when the task or issue is in that stage."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__legend_done
+msgid ""
+"Override the default value displayed for the done state for kanban "
+"selection, when the task or issue is in that stage."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__legend_normal
+msgid ""
+"Override the default value displayed for the normal state for kanban "
+"selection, when the task or issue is in that stage."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__overtime
+msgid "Overtime"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__parent_id
+msgid "Parent Task"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__partner_type
+msgid "Partner Type"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__partner_type_color_id
+msgid "Partner Type Color"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__project_privacy_visibility
+msgid ""
+"People to whom this project and its tasks will be visible.\n"
+"\n"
+"- Invited internal users: when following a project, internal users will get access to all of its tasks without distinction. Otherwise, they will only get access to the specific tasks they are following.\n"
+" A user with the project > administrator access right level can still access this project and its tasks, even if they are not explicitly part of the followers.\n"
+"\n"
+"- All internal users: all internal users can access the project and all of its tasks without distinction.\n"
+"\n"
+"- Invited portal users and all internal users: all internal users can access the project and all of its tasks without distinction.\n"
+"When following a project, portal users will get access to all of its tasks without distinction. Otherwise, they will only get access to the specific tasks they are following."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__partner_phone
+msgid "Phone"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_form2
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_timesheet_summary_pivot
+msgid "Planned"
+msgstr "Planificado"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__access_url
+msgid "Portal Access URL"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__priority
+msgid "Priority"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__progress
+msgid "Progress"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model,name:project_task_followers_mgmt_timesheet.model_project_project
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_account_analytic_line__project_id
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__project_id
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_timesheet_summary_search
+msgid "Project"
+msgstr "Proyecto"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__manager_id
+msgid "Project Manager"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__project_privacy_visibility
+msgid "Project Visibility"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__subtask_project_id
+msgid ""
+"Project in which sub-tasks of the current project will be created. It can be"
+" the current project itself."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__rating_ids
+msgid "Rating"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__rating_avg
+msgid "Rating Average"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__rating_last_feedback
+msgid "Rating Last Feedback"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__rating_last_image
+msgid "Rating Last Image"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__rating_last_value
+msgid "Rating Last Value"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__rating_count
+msgid "Rating count"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__rating_last_feedback
+msgid "Reason of the rating"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__recurrence_id
+msgid "Recurrence"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__recurrence_update
+msgid "Recurrence Update"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__recurring_task
+msgid "Recurrent"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__allow_recurring_tasks
+msgid "Recurring Tasks"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__remaining_hours
+msgid "Remaining Hours"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__repeat_day
+msgid "Repeat Day"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__repeat_interval
+msgid "Repeat Every"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__repeat_month
+msgid "Repeat Month"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__repeat_on_month
+msgid "Repeat On Month"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__repeat_on_year
+msgid "Repeat On Year"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__repeat_show_day
+msgid "Repeat Show Day"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__repeat_show_dow
+msgid "Repeat Show Dow"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__repeat_show_month
+msgid "Repeat Show Month"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__repeat_show_week
+msgid "Repeat Show Week"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__repeat_unit
+msgid "Repeat Unit"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__repeat_week
+msgid "Repeat Week"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__repeat_number
+msgid "Repetitions"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__ribbon_message
+msgid "Ribbon message"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__sat
+msgid "Sat"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__access_token
+msgid "Security Token"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__stage_id
+msgid "Stage"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__subtask_project_id
+msgid "Sub-task Project"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__subtask_count
+msgid "Sub-task count"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__child_ids
+msgid "Sub-tasks"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__subtask_effective_hours
+msgid "Sub-tasks Hours Spent"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__subtask_planned_hours
+msgid "Sub-tasks Planned Hours"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__subtask_planned_hours
+msgid ""
+"Sum of the time planned of all the sub-tasks linked to this task. Usually "
+"less or equal to the initially time planned of this task."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__sun
+msgid "Sun"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__tag_ids
+msgid "Tags"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model,name:project_task_followers_mgmt_timesheet.model_project_task
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__task_id
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_timesheet_summary_search
+msgid "Task"
+msgstr "Tarea"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.actions.act_window,name:project_task_followers_mgmt_timesheet.action_view_task_timesheet_summary
+#: model:ir.ui.menu,name:project_task_followers_mgmt_timesheet.menu_project_task_followers_mgmt_timesheet_report
+msgid "Task Analysis - Allowed users"
+msgstr "Análisis de tareas por usuario asignado"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model,name:project_task_followers_mgmt_timesheet.model_project_task_timesheet_summary
+msgid "Task Timesheet Summaries"
+msgstr "Resúmenes de partes de horas de la tarea"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__task_active
+msgid "Task active"
+msgstr "Tarea activa"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_timesheet_summary_pivot
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_timesheet_summary_search
+msgid "Tasks Analysis - Allowed users"
+msgstr "Análisis de tarea por usuario asignado"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__recurring_count
+msgid "Tasks in Recurrence"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__is_closed
+msgid "Tasks in this stage are considered as closed."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__email_from
+msgid "These people will receive email."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__thu
+msgid "Thu"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__planned_hours
+msgid "Time planned to achieve this task (including its sub-tasks)."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__subtask_effective_hours
+msgid "Time spent on the sub-tasks (and their own sub-tasks) of this task."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__effective_hours
+msgid "Time spent on this task, excluding its sub-tasks."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__total_hours_spent
+msgid "Time spent on this task, including its sub-tasks."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task__timesheet_summary_ids
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_interval__timesheet_summary_ids
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__timesheet_summary_ids
+msgid "Timesheet Summaries"
+msgstr "Resumen de partes de horas"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_form2
+msgid "Timesheet summaries"
+msgstr "Resumen de partes de horas"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__timesheet_ids
+msgid "Timesheets"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__allow_timesheets
+msgid "Timesheets can be logged on this task."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__name
+msgid "Title"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__total_hours_spent
+msgid "Total Hours"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__remaining_hours
+msgid ""
+"Total remaining time, can be re-estimated periodically by the assignee of "
+"the task."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__tue
+msgid "Tue"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__repeat_type
+msgid "Until"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__allowed_user_id
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_timesheet_summary_search
+msgid "User"
+msgstr "Usuario"
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__user_email
+msgid "User Email"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__allowed_user_ids
+msgid "Visible to"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__wed
+msgid "Wed"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__working_days_open
+msgid "Working days to assign"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__working_days_close
+msgid "Working days to close"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__working_hours_open
+msgid "Working hours to assign"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__working_hours_close
+msgid "Working hours to close"
+msgstr ""
