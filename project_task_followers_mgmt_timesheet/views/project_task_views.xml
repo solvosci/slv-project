@@ -31,6 +31,11 @@
                             <group>
                                 <group>
                                     <field name="allowed_user_id"/>
+                                    <field
+                                        name="user_task_finished"
+                                        widget="boolean_toggle"
+                                        string="Finished"
+                                    />
                                 </group>
                                 <group>
                                     <field
@@ -51,8 +56,16 @@
                                 </group>
                             </group>
                         </form>
-                        <tree decoration-danger="hours_deviation &lt; 0">
+                        <tree
+                            decoration-danger="hours_deviation &lt; 0"
+                            decoration-bf="user_task_finished"
+                        >                        
                             <field name="allowed_user_id"/>
+                            <field
+                                name="user_task_finished"
+                                widget="boolean_toggle"
+                                string="Finished"
+                            />
                             <field
                                 name="hours_planned"
                                 widget="timesheet_uom_no_toggle"

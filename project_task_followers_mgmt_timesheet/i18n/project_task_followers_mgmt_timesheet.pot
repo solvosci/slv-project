@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-14 11:19+0000\n"
-"PO-Revision-Date: 2023-04-14 11:19+0000\n"
+"POT-Creation-Date: 2023-04-21 12:31+0000\n"
+"PO-Revision-Date: 2023-04-21 12:31+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -22,6 +22,14 @@ msgid ""
 "        Indicates task type according to associated partner:\n"
 "        internal - belongs to an internal project (has no partner)\n"
 "        customer - the project was linked to a partner\n"
+"        "
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_account_analytic_line__task_summary_id
+msgid ""
+"\n"
+"        Technical field for obtaining task summary for this timesheet\n"
 "        "
 msgstr ""
 
@@ -112,6 +120,12 @@ msgstr ""
 #. module: project_task_followers_mgmt_timesheet
 #: model:ir.model.fields,help:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__attachment_ids
 msgid "Attachment that don't come from message."
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: code:addons/project_task_followers_mgmt_timesheet/models/hr_timesheet.py:0
+#, python-format
+msgid "Cannot change task state because you're not assigned to '%s' task"
 msgstr ""
 
 #. module: project_task_followers_mgmt_timesheet
@@ -243,6 +257,14 @@ msgstr ""
 #. module: project_task_followers_mgmt_timesheet
 #: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__date_end
 msgid "Ending Date"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.hr_timesheet_line_form
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.hr_timesheet_line_tree
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_form2
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_timesheet_summary_search
+msgid "Finished"
 msgstr ""
 
 #. module: project_task_followers_mgmt_timesheet
@@ -466,6 +488,11 @@ msgstr ""
 #. module: project_task_followers_mgmt_timesheet
 #: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__recurrence_message
 msgid "Next Recurrencies"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:project_task_followers_mgmt_timesheet.view_task_timesheet_summary_search
+msgid "Not finished"
 msgstr ""
 
 #. module: project_task_followers_mgmt_timesheet
@@ -819,6 +846,11 @@ msgid "Task Analysis - Allowed users"
 msgstr ""
 
 #. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_account_analytic_line__task_summary_id
+msgid "Task Summary"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
 #: model:ir.model,name:project_task_followers_mgmt_timesheet.model_project_task_timesheet_summary
 msgid "Task Timesheet Summaries"
 msgstr ""
@@ -947,6 +979,12 @@ msgstr ""
 #. module: project_task_followers_mgmt_timesheet
 #: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__user_email
 msgid "User Email"
+msgstr ""
+
+#. module: project_task_followers_mgmt_timesheet
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_account_analytic_line__user_task_finished
+#: model:ir.model.fields,field_description:project_task_followers_mgmt_timesheet.field_project_task_timesheet_summary__user_task_finished
+msgid "User has finished task"
 msgstr ""
 
 #. module: project_task_followers_mgmt_timesheet

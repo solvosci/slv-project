@@ -52,6 +52,17 @@
                 />
                 <separator/>
                 <filter
+                    name="filter_finished"
+                    string="Finished"
+                    domain="[('user_task_finished','=',True)]"
+                />
+                <filter
+                    name="filter_notfinished"
+                    string="Not finished"
+                    domain="[('user_task_finished','=',False)]"
+                />
+                <separator/>
+                <filter
                     name="filter_customer_tasks"
                     string="Customer Tasks"
                     domain="[('partner_id','!=',False)]"
