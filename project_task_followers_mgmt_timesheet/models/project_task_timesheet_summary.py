@@ -38,6 +38,10 @@ class ProjectTaskTimesheetSummary(models.Model):
         compute="_compute_hours_deviation",
         store=True,
     )
+    user_task_finished = fields.Boolean(
+        string="User has finished task",
+        default=False,
+    )
 
     @api.depends("timesheet_ids.unit_amount", "allowed_user_id")
     def _compute_hours_effective(self):

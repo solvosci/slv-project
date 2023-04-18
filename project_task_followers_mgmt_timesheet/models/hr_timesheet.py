@@ -1,7 +1,8 @@
 # © 2023 Solvos Consultoría Informática (<http://www.solvos.es>)
 # License LGPL-3.0 (https://www.gnu.org/licenses/lgpl-3.0.html)
 
-from odoo import fields, models
+from odoo import _, fields, models
+from odoo.exceptions import UserError
 from odoo.osv import expression
 
 
@@ -30,3 +31,41 @@ class AccountAnalyticLine(models.Model):
         return domain
 
     project_id = fields.Many2one(domain=_new_domain_project_id)
+    # TODO should this field be stored?
+    task_summary_id = fields.Many2one(
+        comodel_name="project.task.timesheet_summary",
+        compute="_compute_task_summary_id",
+        help="""
+        Technical field for obtaining task summary for this timesheet
+        """,
+    )
+    user_task_finished = fields.Boolean(
+        string="User has finished task",
+        compute="_compute_user_task_finished",
+        inverse="_inverse_user_task_finished",
+    )    
+
+    def _compute_task_summary_id(self):
+        for timesheet in self:
+            timesheet.task_summary_id = timesheet.task_id.timesheet_summary_ids.filtered(
+                lambda x: x.allowed_user_id == timesheet.user_id
+            ) or False
+
+    def _compute_user_task_finished(self):
+        for timesheet in self:
+            timesheet.user_task_finished = (
+                timesheet.task_summary_id.user_task_finished
+                or
+                False
+            )
+
+    def _inverse_user_task_finished(self):
+        for timesheet in self.sudo():
+            if timesheet.task_summary_id:
+                timesheet.task_summary_id.user_task_finished = timesheet.user_task_finished
+            else:
+                raise UserError(
+                    _("Cannot change task state because you're not assigned to '%s' task")
+                    %
+                    timesheet.task_id.name
+                )

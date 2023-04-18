@@ -25,7 +25,8 @@ followers project it user is allowed in at least one task).
 
 Also adds a task analysis report based on task allowed users and their timesheets.
 Each allowed user will have as task planned hours a proportional part depending
-on the count of allowed users.
+on the count of allowed users and can mark as finished their task part from
+timesheets.
 
 **Table of contents**
 
