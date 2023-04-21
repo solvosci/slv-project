@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="hr_timesheet_sheet_form" model="ir.ui.view">
+        <field name="name">
+            hr_timesheet.sheet.form (in project_task_followers_mgmt_timesheet_sheet)
+        </field>
+        <field name="model">hr_timesheet.sheet</field>
+        <field
+            name="inherit_id"
+            ref="hr_timesheet_sheet.hr_timesheet_sheet_form"
+        />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//field[@name='timesheet_ids']/tree"
+                position="attributes"
+            >
+                <attribute name="decoration-bf">user_task_finished</attribute>
+            </xpath>
+            <xpath
+                expr="//field[@name='timesheet_ids']/tree/field[@name='task_id']"
+                position="after"
+            >
+                <field
+                    name="user_task_finished"
+                    widget="boolean_toggle"
+                    string="Finished"
+                />
+            </xpath>
+            <xpath
+                expr="//field[@name='timesheet_ids']/form/group/field[@name='task_id']"
+                position="after"
+            >
+                <field
+                    name="user_task_finished"
+                    widget="boolean_toggle"
+                    string="Finished"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>
