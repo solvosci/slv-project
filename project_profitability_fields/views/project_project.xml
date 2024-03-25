@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="project_custom_fields_form_view" model="ir.ui.view">
+        <field name="name">project.project.form</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='tag_ids']" position="after">
+                <field name="project_date"/>
+                <field name="estimated_cost"/>
+                <field name="margin" string="Margin(%)"/>
+                <field name="estimated_income"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
