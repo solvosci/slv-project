@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="project_mis_report_form_view" model="ir.ui.view">
+        <field name="name">project.project.form</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project" />
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet/notebook/page[2]" position="before">
+                <page name="mis_report" string="Mis Report">
+                    <group>
+                        <group name="mis_report_group">
+                            <field name="mis_report_template_id" widget="many2one"/>
+                            <field name="mis_report_instance_id" widget="many2one"/>
+                        </group>
+                        <group name="mis_report_group2">
+                            <button name="auto_create_mis_instance" string="Autocreate" type="object" class="btn-primary" attrs="{'invisible': [('mis_report_instance_id', '!=', False)]}"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
