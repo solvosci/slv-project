@@ -8,7 +8,7 @@
     """,
     "author": "Solvos",
     "license": "LGPL-3",
-    "version": "15.0.1.2.0",
+    "version": "15.0.1.2.1",
     "category": "Project",
     "website": "https://github.com/solvosci/slv-project",
     "depends": ["project", "purchase_stock", "project_profitability_fields"],

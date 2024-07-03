@@ -10,15 +10,17 @@ class ProjectProject(models.Model):
 
     def write(self, vals):
         res = super().write(vals)
-        if 'last_close_date' in vals and vals['last_close_date']:
+        if self and 'last_close_date' in vals and vals['last_close_date']:
+            date = self[0].last_close_date + relativedelta(days=1)
             order_line_ids = self.env['purchase.order.line'].sudo().search([
                 ('account_analytic_id', 'in', self.analytic_account_id.ids),
                 ('order_id.invoice_status', '!=', 'invoiced'),
                 ('state', '!=', 'cancel'),
+                ('forecast_date', '<', date)
             ])
             if order_line_ids:
                 order_line_ids.write({
-                    'forecast_date': self[0].last_close_date + relativedelta(days=1)
+                    'forecast_date': date
                 })
         return res
 
