@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="project_close_month_view_form" model="ir.ui.view">
+        <field name="name">project.close.month.view.form</field>
+        <field name="model">project.close.month.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group class="m-0">
+                        <group>
+                            <label for="project_ids"/>
+                        </group>
+                        <group>
+                            <label for="last_close_date"/>
+                        </group>
+                    </group>
+                    <group class="m-0">
+                        <group>
+                            <field name="project_ids" nolabel="1">
+                                <tree default_order="last_close_date">
+                                    <field name="name" />
+                                    <field name="last_close_date" />
+                                </tree>
+                            </field>
+                        </group>
+                        <group>
+                            <field name="last_close_date" required="1" nolabel="1"/>
+                        </group>
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="close_month" type="object" class="btn-primary" string="Close month"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>

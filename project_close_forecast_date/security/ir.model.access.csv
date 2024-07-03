@@ -1,0 +1,2 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_project_close_month_wizard_manager","access.project_close_month_wizard_manager","project_close_forecast_date.model_project_close_month_wizard","project.group_project_manager",1,1,1,1
