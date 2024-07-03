@@ -21,3 +21,17 @@ class ProjectProject(models.Model):
                     'forecast_date': self[0].last_close_date + relativedelta(days=1)
                 })
         return res
+
+    def action_close_month(self):
+        Wizard = self.env["project.close.month.wizard"]
+        new = Wizard.create({
+            "project_ids" : self.env.context["active_ids"]
+        })
+        return{
+            "name":_("Close month"),
+            "view_mode":"form",
+            "res_model":"project.close.month.wizard",
+            "type":"ir.actions.act_window",
+            "target":"new",
+            "res_id":new.id
+        }

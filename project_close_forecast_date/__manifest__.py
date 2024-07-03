@@ -8,12 +8,15 @@
     """,
     "author": "Solvos",
     "license": "LGPL-3",
-    "version": "15.0.1.0.0",
+    "version": "15.0.1.1.0",
     "category": "Project",
     "website": "https://github.com/solvosci/slv-project",
     "depends": ["project", "purchase_stock", "project_profitability_fields"],
     "data": [
+        "security/ir.model.access.csv",
         "views/purchase_order_views.xml",
+        "views/project_project_views.xml",
+        "wizard/project_close_month.xml",
     ],
     "installable": True,
 }
