@@ -35,7 +35,7 @@ msgstr "Ingreso estimado"
 #. module: project_profitability_fields
 #: model:ir.model.fields,field_description:project_profitability_fields.field_project_project__last_close_date
 msgid "Last Close Date"
-msgstr "Última fecha de cierre"
+msgstr "Último cierre mensual"
 
 #. module: project_profitability_fields
 #: model:ir.model.fields,field_description:project_profitability_fields.field_project_project__margin
