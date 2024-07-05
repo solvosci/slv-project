@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-19 12:53+0000\n"
-"PO-Revision-Date: 2024-06-19 12:53+0000\n"
+"POT-Creation-Date: 2024-07-03 12:02+0000\n"
+"PO-Revision-Date: 2024-07-03 12:02+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,12 +16,61 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: project_close_forecast_date
+#: code:addons/project_close_forecast_date/models/project_project.py:0
+#: model:ir.actions.server,name:project_close_forecast_date.action_close_month
+#: model_terms:ir.ui.view,arch_db:project_close_forecast_date.project_close_month_view_form
+#, python-format
+msgid "Close month"
+msgstr "Cerrar mes"
+
+#. module: project_close_forecast_date
+#: model:ir.model.fields,field_description:project_close_forecast_date.field_project_close_month_wizard__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: project_close_forecast_date
+#: model:ir.model.fields,field_description:project_close_forecast_date.field_project_close_month_wizard__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: project_close_forecast_date
+#: model:ir.model.fields,field_description:project_close_forecast_date.field_project_close_month_wizard__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: project_close_forecast_date
 #: model:ir.model.fields,field_description:project_close_forecast_date.field_purchase_order_line__forecast_date
 msgid "Forecast Date"
 msgstr "Previsión gasto"
 
 #. module: project_close_forecast_date
+#: model:ir.model.fields,field_description:project_close_forecast_date.field_project_close_month_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: project_close_forecast_date
+#: model:ir.model.fields,field_description:project_close_forecast_date.field_project_close_month_wizard__last_close_date
+msgid "Last Close Date"
+msgstr "Último cierre mensual"
+
+#. module: project_close_forecast_date
+#: model:ir.model.fields,field_description:project_close_forecast_date.field_project_close_month_wizard____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: project_close_forecast_date
+#: model:ir.model.fields,field_description:project_close_forecast_date.field_project_close_month_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: project_close_forecast_date
+#: model:ir.model.fields,field_description:project_close_forecast_date.field_project_close_month_wizard__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: project_close_forecast_date
 #: model:ir.model,name:project_close_forecast_date.model_project_project
+#: model:ir.model.fields,field_description:project_close_forecast_date.field_project_close_month_wizard__project_ids
 msgid "Project"
 msgstr "Proyecto"
 
@@ -29,3 +78,13 @@ msgstr "Proyecto"
 #: model:ir.model,name:project_close_forecast_date.model_purchase_order_line
 msgid "Purchase Order Line"
 msgstr "Línea de pedido de compra"
+
+#. module: project_close_forecast_date
+#: model:ir.model,name:project_close_forecast_date.model_stock_picking
+msgid "Transfer"
+msgstr "Albarán"
+
+#. module: project_close_forecast_date
+#: model:ir.model,name:project_close_forecast_date.model_project_close_month_wizard
+msgid "project.close.month.wizard"
+msgstr ""
