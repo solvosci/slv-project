@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="edit_project" model="ir.ui.view">
+        <field name="name">project.project.form (in project_account_move_line_link)</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project" />
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_view_analytic_account_entries']" position="after">
+                <button name="action_open_account_move_lines" type="object" class="oe_stat_button" icon="fa-pencil-square-o" groups="account.group_account_invoice,account.group_account_readonly">
+                    <div class="o_field_widget o_stat_info">
+                        <span class="o_stat_value">
+                            <field name="account_move_line_count" nolabel="1"/>
+                        </span>
+                        <span class="o_stat_text">
+                            Account Move Lines
+                        </span>
+                    </div>
+                </button>
+            </xpath>
+        </field>
+    </record>
+</odoo>
