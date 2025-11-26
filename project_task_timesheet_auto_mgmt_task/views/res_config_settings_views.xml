@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_res_config_settings_inherit_mgmt_task" model="ir.ui.view">
+        <field name="name">res.company.form.inherit.mgmt.task</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='social_media']" position="after">
+                <group string="Management Task">
+                    <field name="task_name" config_parameter="project_task_timesheet_auto_mgmt_task.task_name"/>
+                    <field name="task_description" config_parameter="project_task_timesheet_auto_mgmt_task.task_description"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

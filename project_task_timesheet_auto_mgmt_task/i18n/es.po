@@ -1,0 +1,100 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* project_task_timesheet_auto_mgmt_task
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-10 15:17+0000\n"
+"PO-Revision-Date: 2025-11-10 15:17+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: project_task_timesheet_auto_mgmt_task
+#: model:ir.model.fields,field_description:project_task_timesheet_auto_mgmt_task.field_res_company__task_description
+msgid "Auto management task description"
+msgstr "Descripción de la tarea de gestión automática"
+
+#. module: project_task_timesheet_auto_mgmt_task
+#: model:ir.model.fields,field_description:project_task_timesheet_auto_mgmt_task.field_res_company__task_name
+msgid "Auto management task title"
+msgstr "Título de la tarea de gestión automática"
+
+#. module: project_task_timesheet_auto_mgmt_task
+#. odoo-python
+#: code:addons/project_task_timesheet_auto_mgmt_task/models/project_project.py:0
+#, python-format
+msgid "Auto-generated management task"
+msgstr "Tarea de gestión autogenerada"
+
+#. module: project_task_timesheet_auto_mgmt_task
+#: model:ir.model,name:project_task_timesheet_auto_mgmt_task.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: project_task_timesheet_auto_mgmt_task
+#: model_terms:ir.ui.view,arch_db:project_task_timesheet_auto_mgmt_task.project_project_view_form_simplified_inherit_mgmt_task
+#: model_terms:ir.ui.view,arch_db:project_task_timesheet_auto_mgmt_task.view_project_form_inherit_mgmt_task
+msgid "Create Management Task"
+msgstr "Crear Tarea de Gestión"
+
+#. module: project_task_timesheet_auto_mgmt_task
+#: model:ir.model.fields,field_description:project_task_timesheet_auto_mgmt_task.field_project_project__create_mgmt_task
+msgid "Create management task on project creation"
+msgstr "Crear tarea de gestión al crear el proyecto"
+
+#. module: project_task_timesheet_auto_mgmt_task
+#: model:ir.model.fields,help:project_task_timesheet_auto_mgmt_task.field_project_project__create_mgmt_task
+msgid ""
+"If enabled, an initial management task will be created with the project."
+msgstr ""
+"Si está habilitada, se creará una tarea de gestión inicial con el proyecto"
+
+#. module: project_task_timesheet_auto_mgmt_task
+#: model:ir.model.fields,field_description:project_task_timesheet_auto_mgmt_task.field_project_task_type__is_management_stage
+msgid "Is Management State"
+msgstr "Es un Estado de Gestión"
+
+#. module: project_task_timesheet_auto_mgmt_task
+#: model:ir.model.fields,field_description:project_task_timesheet_auto_mgmt_task.field_project_task__is_management_task
+msgid "Is Management Task"
+msgstr "Es una Tarea de Gestión"
+
+#. module: project_task_timesheet_auto_mgmt_task
+#. odoo-python
+#: code:addons/project_task_timesheet_auto_mgmt_task/models/project_project.py:0
+#, python-format
+msgid "Management"
+msgstr "Gestión"
+
+#. module: project_task_timesheet_auto_mgmt_task
+#: model_terms:ir.ui.view,arch_db:project_task_timesheet_auto_mgmt_task.view_res_config_settings_inherit_mgmt_task
+msgid "Management Task"
+msgstr "Tarea de Gestión"
+
+#. module: project_task_timesheet_auto_mgmt_task
+#: model:ir.model,name:project_task_timesheet_auto_mgmt_task.model_project_project
+msgid "Project"
+msgstr "Proyecto"
+
+#. module: project_task_timesheet_auto_mgmt_task
+#: model:ir.model,name:project_task_timesheet_auto_mgmt_task.model_project_task
+msgid "Task"
+msgstr "Tarea"
+
+#. module: project_task_timesheet_auto_mgmt_task
+#: model:ir.model,name:project_task_timesheet_auto_mgmt_task.model_project_task_type
+msgid "Task Stage"
+msgstr "Etapa de la tarea"
+
+#. module: project_task_timesheet_auto_mgmt_task
+#. odoo-python
+#: code:addons/project_task_timesheet_auto_mgmt_task/models/project_project.py:0
+#, python-format
+msgid "[T0] Project Management"
+msgstr "[T0] Gestión de Proyecto"
